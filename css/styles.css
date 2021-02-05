@@ -1,0 +1,162 @@
+:root {
+  --primary: black;
+  --secondary: lightgreen;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--secondary);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+nav li {
+  float: left;
+}
+
+#logo a {
+  font-weight: 900;
+}
+
+nav a {
+  display: block;
+  color: var(--secondary);
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: background-color 250ms ease-in, color 500ms linear;
+}
+
+nav a:hover:not(#logo a) {
+  color: black;
+  background-color: var(--secondary);
+}
+
+nav a:active:not(#logo a) {
+  color: var(--primary);
+}
+
+.home-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border-radius: 50%;
+}
+
+.home-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary);
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.home-text p::selection {
+  color: red;
+  background-color: rgba(#04bf68), 0.8;
+}
+
+section:not(:first-of-type) {
+  padding: 40px 100px;
+}
+
+.title-highlight {
+  border-left: 4px solid var(--primary);
+  padding-left: 7px;
+}
+
+.title-highlight ~ ul li {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+#contact .section-title h1 {
+  text-transform: uppercase;
+}
+
+#contact {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+form  {
+  text-align: left;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  width: 500px;
+}
+
+input,
+textarea {
+  font-family: "Nunito", sans-serif;
+  color: var(--secondary);
+  width: 100%;
+}
+
+#contact input,
+#contact textarea {
+  background: none;
+  border: none;
+  border-left: 1px dotted rgba(144, 238, 144, 0.7);
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: rgba(144, 238, 144, 0.7);
+  padding-left: 7px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+}
+
+button[type="submit"] {
+  font-weight: bold;
+  background-color: var(--secondary);
+  margin-top: 5px;
+}
+
+.btn {
+  font-family: "Nunito", sans-serif;
+  padding: 7px 20px;
+  border: none;
+}

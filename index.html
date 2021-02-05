@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Web - CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li id="logo"><a href="/">PORTFOLIO</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-hero">
+                <img src="./img/danial-ricaros-785707-unsplash-1520x1013.jpg" alt="Hero">
+                <div class="home-text">
+                    <p>Hello, I'm John Doe !</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-title">
+                <h1>ABOUT ME</h1>
+            </div>
+            <div class="section-content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odit culpa accusantium et
+                    inventore voluptas neque placeat esse, fuga error commodi optio modi, eius reprehenderit. Libero
+                    odit nulla maxime ea!</p>
+            </div>
+            <h3 class="title-highlight">Academic Background</h3>
+            <ul>
+                <li>GoMyCode Certificat - 2021</li>
+                <li>Civil Engineering Master - 2018</li>
+            </ul>
+            <h3 class="title-highlight">Work Experience</h3>
+            <ul>
+                <li>GoMyCode Certificat - 2021</li>
+                <li>Civil Engineering Master - 2018</li>
+            </ul>
+            <h3 class="title-highlight">Associative Experience</h3>
+            <ul>
+                <li>GoMyCode Certificat - 2021</li>
+                <li>Civil Engineering Master - 2018</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <div class="section-title">
+                <h1>contact me</h1>
+            </div>
+            <form>
+                <div class="form-item">
+                    <label for="fullname">Full name :</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter full name" />
+                </div>
+                <div class="form-item"><label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" />
+                </div>
+                <div class="form-item"><label for="phone">Phone :</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone">
+                </div>
+                <div class="form-item"><label for="message">Message :</label>
+                    <textarea placeholder="Enter message" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
